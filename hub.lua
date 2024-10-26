@@ -6,12 +6,12 @@ Fluent:Notify({
     Duration = 5 -- Set to nil to make the notification not disappear
 })
 local Window = Fluent:CreateWindow({
-    Title = "Durk Ware[Beta]",
+    Title = "Durk Ware.lua",
     SubTitle = "by durk7896|V0.8",
     TabWidth = 160,
     Size = UDim2.fromOffset(480, 360),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
-    Theme = "Darker",
+    Theme = "Dark",
     MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
 })
 
@@ -61,5 +61,30 @@ Tab.BFP:AddButton({
     end
 })
 
+local Tab = {
+    BLBA = Window:AddTab({ Title = "Blade Ball", Icon = "code" })
+}
+
+Tab.BLBA:AddButton({
+    Title = "Plutonium.lua",
+    Description = "by Plutonium",
+    Callback = function()
+        print("Hello, world!")                                        loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Plutonium.AA/main/Plutonium.Loader.lua", true))() 
+    end 
+})
 
 
+local Tab = {
+    Doors = Window:AddTab({ Title = "Doors", Icon = "code" })
+}
+
+Tab.Doors:AddButton({
+    Title = "Blackking x Bob",
+    Description = "SO GOOD",
+    Callback = function()
+        print("Hello, world!")                                        --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing-obf/main/Doors%20Blackking%20And%20BobHub"))()
+    end 
+})
