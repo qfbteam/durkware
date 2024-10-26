@@ -88,3 +88,15 @@ Tab.Doors:AddButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing-obf/main/Doors%20Blackking%20And%20BobHub"))()
     end 
 })
+
+local Tab = {
+    FYFPS = Window:AddTab({ Title = "Flex your fps", Icon = "code" })
+}
+
+Tab.FYFPS:AddButton({
+    Title = "Flex your fps",
+    Description = "Flex your fps",
+    Callback = function()
+        print("Hello, world!")                                        loadstring(game:HttpGet('https://raw.githubusercontent.com/v-oidd/flex-your-fps-script/main/script'))()
+    end 
+})
