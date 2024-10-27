@@ -6,7 +6,7 @@ Fluent:Notify({
     Duration = 5 -- Set to nil to make the notification not disappear
 })
 local Window = Fluent:CreateWindow({
-    Title = "Durk Ware.lua",
+    Title = "Durk.lua",
     SubTitle = "by durk7896|V0.8",
     TabWidth = 160,
     Size = UDim2.fromOffset(480, 360),
