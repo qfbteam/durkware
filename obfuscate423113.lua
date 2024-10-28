@@ -25,6 +25,11 @@ local playerName = game.Players.LocalPlayer.Name
 local Section = Tab.Creditos:AddSection(playerName)
 
 Tab.Creditos:AddParagraph({
+    Title = "Descancelado!",
+    Content = "O hub esta de volta a vida!\nAlgumas updates vão ser diarias ou mensalmente"
+})
+
+Tab.Creditos:AddParagraph({
     Title = "Desenvolvedor",
     Content = "durk7896"
 })
