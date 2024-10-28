@@ -25,11 +25,6 @@ local playerName = game.Players.LocalPlayer.Name
 local Section = Tab.Creditos:AddSection(playerName)
 
 Tab.Creditos:AddParagraph({
-    Title = "Descancelado!",
-    Content = "O hub esta de volta a vida!\nAlgumas updates vão ser diarias ou mensalmente"
-})
-
-Tab.Creditos:AddParagraph({
     Title = "Desenvolvedor",
     Content = "durk7896"
 })
@@ -63,6 +58,17 @@ Tab.BFP:AddButton({
         getgenv().ForceUseWalkSpeedModifier = true --Force turn on Walk Speed Modifier , if error then executor problem
         
          loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+    end
+})
+
+Tab.BFP:AddButton({
+    Title = "Xero Hub",
+    Description = "recommended",
+    Callback = function()
+        print("Hello, world!")                                        -- Not done, but have some features that old main doesnt have
+getgenv().Team = "Marines" -- Pirates/Marines
+getgenv().Hide_Menu = false -- true/false
+loadstring(game:HttpGet("http://apixerohub.x10.mx/new_main.lua"))()
     end
 })
 
